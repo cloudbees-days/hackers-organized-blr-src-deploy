@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hackers-organized
-          image: ldonleycb/hackers-organized
+          image: ldonleycb/hackers-organized:IMAGE_TAG
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
