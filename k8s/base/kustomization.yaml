@@ -5,9 +5,9 @@ resources:
 - service.yaml
 - ingress.yaml
 
-images:
-- name: ldonleycb/hackers-organized
-  newTag: IMAGE_TAG
+#images:
+#- name: ldonleycb/hackers-organized
+#  newTag: latest
 
 labels:
 - includeSelectors: true
