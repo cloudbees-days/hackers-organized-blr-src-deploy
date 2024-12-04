@@ -173,7 +173,7 @@ jobs:
         with:
           kustomization-base-dir: ${{ cloudbees.workspace }}/k8s/base
           kustomization-overlays-dir: ${{ cloudbees.workspace }}/k8s/overlays/prod
-          environment-variables: "{}"
+          environment-variables: '{"IMAGE_NAME":"${{ secrets.DOCKERHUB_USER }}/hackers-organized:${{ cloudbees.scm.sha }}"}'
       - name: Publish evidence
         uses: cloudbees-io/publish-evidence-item@v1
         with:
